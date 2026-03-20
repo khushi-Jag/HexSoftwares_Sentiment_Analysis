@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion AI Analyzer</title>
+    <!-- Refined, elegant fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Ambient moving background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- VIEW 1: Welcome Screen -->
+    <div id="welcome-view" class="view active">
+        <div class="welcome-center">
+            <h1 class="reveal-text">Emotion AI</h1>
+            <p class="reveal-fade delay-1">Understand the sentiment behind your words. Discover the hidden feelings in your text.</p>
+            <button id="enter-btn" class="reveal-fade delay-2 hover-glow">Begin Experience <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+        </div>
+    </div>
+
+    <!-- VIEW 2: Dashboard App -->
+    <div id="app-view" class="view">
+        <div class="dashboard-wrapper">
+            <div class="dashboard-header fade-in">
+                <h2>Sentiment Dashboard</h2>
+                <div class="counters">
+                    <span id="char-count">0 characters</span>
+                    <span class="dot-separator">•</span>
+                    <span id="word-count">0 words</span>
+                </div>
+            </div>
+
+            <div class="grid-layout fade-in delay-1">
+                
+                <!-- Left: Input Area -->
+                <div class="card input-card">
+                    <div class="card-title">Analyze Text</div>
+                    <div class="textarea-container">
+                        <textarea id="text-input" placeholder="What's on your mind?"></textarea>
+                        <div class="focus-ring"></div>
+                    </div>
+                    <div class="action-row">
+                        <button id="clear-btn" class="text-btn">Clear All</button>
+                        <div id="loader" class="mini-loader hidden">
+                            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Status Area -->
+                <div class="card result-card">
+                    <div class="card-title">Analysis Result</div>
+                    
+                    <div class="result-center">
+                        <div class="gauge-container">
+                            <svg class="ring-svg" viewBox="0 0 120 120">
+                                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                                <circle id="progress-ring" class="ring-fg" cx="60" cy="60" r="54"></circle>
+                            </svg>
+                            <div class="gauge-inner">
+                                <span id="overall-emoji">💭</span>
+                            </div>
+                        </div>
+
+                        <div class="score-details">
+                            <h3 id="overall-sentiment">Neutral</h3>
+                            <div class="score-pill">Score: <span id="overall-score">0.00</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Motivational / Sentimental Message -->
+                    <div class="message-box" id="message-box">
+                        <p id="motivational-message">Awaiting your thoughts...</p>
+                    </div>
+
+                    <div class="sentence-breakdown">
+                        <div class="card-title small-title">Sentence Breakdown</div>
+                        <div id="sentences-wrapper" class="sentences-scroll">
+                            <div class="empty-list">No sentences analyzed yet.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Elegant Footer for Khushi -->
+    <footer class="fixed-footer">
+        <div class="signature-line">
+            <span class="static-text">MADE BY :</span> 
+            <span class="animated-name">KHUSHI JAGWANI</span>
+        </div>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
