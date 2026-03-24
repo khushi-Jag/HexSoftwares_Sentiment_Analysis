@@ -1,36 +1,70 @@
-# Emotion AI - Sentiment Analyzer 🧠✨
+# Emotion AI — Sentiment Analyzer 🧠✨
 
-A premium, highly-interactive Sentiment Analysis Web Application built for the **Hex Softwares Machine Learning Internship (Task 1)**, created by **Khushi Jagwani**.
+A premium, highly interactive Sentiment Analysis Web Application developed for the **Hex Softwares Machine Learning Internship (Task 1)**, built by **Khushi Jagwani**.
+
+[![Contributors](https://img.shields.io/github/contributors/khushi-Jag/HexSoftwares_Sentiment_Analysis)](https://github.com/khushi-Jag/HexSoftwares_Sentiment_Analysis/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/khushi-Jag/HexSoftwares_Sentiment_Analysis)](https://github.com/khushi-Jag/HexSoftwares_Sentiment_Analysis/network/members)
+[![Stars](https://img.shields.io/github/stars/khushi-Jag/HexSoftwares_Sentiment_Analysis)](https://github.com/khushi-Jag/HexSoftwares_Sentiment_Analysis/stargazers)
+[![Issues](https://img.shields.io/github/issues/khushi-Jag/HexSoftwares_Sentiment_Analysis)](https://github.com/khushi-Jag/HexSoftwares_Sentiment_Analysis/issues)
+[![License](https://img.shields.io/github/license/khushi-Jag/HexSoftwares_Sentiment_Analysis)](https://github.com/khushi-Jag/HexSoftwares_Sentiment_Analysis/blob/main/LICENSE)
+
+---
 
 ## 🌟 Features
-- **Ultra-Aesthetic UI**: Smooth page transitions, glassmorphism cards, glowing gradients, and an animated ambient background.
-- **Real-Time Analysis**: Debounced API requests instantly track and compute textual emotions locally.
-- **Sentence-Level Breakdown**: Intelligently dissects full paragraphs, scoring each sentence independently in an elegant breakdown list.
-- **Motivational Companion**: The UI dynamically alters its messaging based on your mood—offering uplifting quotes if you feel sad, praising positivity, and keeping you motivated during a neutral state.
-- **Dynamic Visuals**: Equipped with an animated SVG progress ring that fills and changes colors to represent absolute emotion intensity perfectly.
+
+- **Ultra-Aesthetic UI** — Polished page transitions, glassmorphism cards, glowing gradient effects, and a fluid animated ambient background create a visually immersive experience.
+- **Real-Time Analysis** — Debounced API calls ensure instant, continuous emotion tracking and local sentiment computation as you type.
+- **Sentence-Level Breakdown** — Full paragraphs are intelligently segmented and each sentence is scored independently, displayed in a clean and readable breakdown list.
+- **Motivational Companion** — The interface adapts its tone based on detected mood — offering uplifting quotes for sadness, celebrating positivity, and keeping users inspired during neutral states.
+- **Dynamic Visuals** — An animated SVG progress ring fills and shifts colors in real time to intuitively represent the absolute intensity of the detected emotion.
+
+---
 
 ## 🛠️ Tech Stack
-- **Backend**: Python 3, FastAPI, Uvicorn, `vaderSentiment`
-- **Frontend**: Vanilla HTML5, CSS3 (Keyframe Animations), Modern JS (ES6+ & Fetch APIs)
+
+| Layer | Technologies |
+|---|---|
+| **Backend** | Python 3, FastAPI, Uvicorn, `vaderSentiment` |
+| **Frontend** | Vanilla HTML5, CSS3 (Keyframe Animations), Modern JS (ES6+ & Fetch API) |
+
+---
 
 ## 🚀 Getting Started
 
-### 1. Requirements
-Ensure you have Python installed, then download the dependencies:
+### 1. Install Dependencies
+
+Make sure Python is installed on your system, then run:
+
 ```bash
 pip install -r requirements.txt
 ```
-*(Or install manually: `pip install fastapi uvicorn vaderSentiment pydantic`)*
+
+Or install the packages manually:
+
+```bash
+pip install fastapi uvicorn vaderSentiment pydantic
+```
 
 ### 2. Start the Backend Server
-Launch the application locally in your terminal:
+
+Launch the application locally from your terminal:
+
 ```bash
 python -m uvicorn main:app --port 8000
 ```
 
-### 3. View the Result 
-Open your preferred web browser and navigate to:
-**[http://localhost:8000](http://localhost:8000)** 
+### 3. Open in Browser
+
+Once the server is running, open your preferred browser and visit:
+
+**[http://localhost:8000](http://localhost:8000)**
+
+---
+
+## 📫 Contact
+
+**Khushi Jagwani**
+GitHub: [https://github.com/khushi-Jag/HexSoftwares_Sentiment_Analysis](https://github.com/khushi-Jag/HexSoftwares_Sentiment_Analysis)
 
 ---
 
